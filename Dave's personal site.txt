@@ -4,79 +4,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engineer Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">  <!-- Navbar -->  <nav class="bg-white shadow fixed w-full z-10">
+<body class="bg-gray-100 text-gray-800">
+  <script>AOS.init();</script>  <!-- Navbar -->  <nav class="bg-white shadow-md fixed w-full z-10">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Your Name</h1>
-      <ul class="flex space-x-6">
-        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-        <li><a href="#about" class="hover:text-blue-600">About</a></li>
-        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
-        <li><a href="#experience" class="hover:text-blue-600">Experience</a></li>
-        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
-        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      <h1 class="text-2xl font-bold text-blue-700">EBUBECHUKWU DAVID</h1>
+      <ul class="flex space-x-6 text-sm font-medium">
+        <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600 transition">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-600 transition">Projects</a></li>
+        <li><a href="#experience" class="hover:text-blue-600 transition">Experience</a></li>
+        <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
+        <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
       </ul>
     </div>
-  </nav>  <!-- Hero -->  <section id="home" class="h-screen flex items-center justify-center text-center bg-gradient-to-r from-blue-100 to-blue-300 pt-20">
-    <div>
-      <h2 class="text-4xl font-bold mb-4">Hi, I'm an Engineer</h2>
-      <p class="text-xl mb-6">Focused on problem-solving, design, and hands-on maintenance</p>
-      <a href="#projects" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">View My Work</a>
+  </nav>  <!-- Hero -->  <section id="home" class="h-screen flex items-center justify-center text-center bg-gradient-to-br from-gray-100 to-blue-200 pt-20 px-4" data-aos="fade-up">
+    <div class="max-w-2xl">
+      <h2 class="text-5xl font-bold mb-4 text-blue-800">Hi, I'm an Engineer</h2>
+      <p class="text-lg mb-6 text-gray-700">Focused on problem-solving, design, and hands-on maintenance</p>
+      <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-md hover:bg-blue-700 transition">View My Work</a>
     </div>
-  </section>  <!-- About -->  <section id="about" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-bold mb-6">About Me</h3>
-      <p class="text-lg leading-relaxed">I'm a passionate engineer with a background in mechanical systems, maintenance, and design. I enjoy working on real-world problems and continuously learning new tools and technologies.</p>
+  </section>  <!-- About -->  <section id="about" class="py-24 bg-white px-6" data-aos="fade-right">
+    <div class="container mx-auto max-w-4xl text-center">
+      <h3 class="text-4xl font-bold mb-4 text-blue-800">About Me</h3>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="https://picsum.photos/200" alt="Profile Photo" class="w-40 h-40 object-cover rounded-full mx-auto">
+        <p class="text-lg leading-relaxed text-gray-700">I'm a passionate engineer with a background in mechanical systems, maintenance, and design. I enjoy working on real-world problems and continuously learning new tools and technologies.</p>
+      </div>
     </div>
-  </section>  <!-- Projects -->  <section id="projects" class="py-20 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-bold mb-6">Projects</h3>
+  </section>  <!-- Projects -->  <section id="projects" class="py-24 bg-gray-50 px-6">
+    <div class="container mx-auto">
+      <h3 class="text-4xl font-bold mb-10 text-center text-blue-800" data-aos="zoom-in">Projects</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded shadow">
-          <h4 class="text-xl font-semibold mb-2">Blow Mold Nozzle Replacement</h4>
-          <p class="text-gray-700">Participated in replacing nozzles during machine conversion at a bottling company.</p>
+        <div class="bg-white p-4 rounded-2xl shadow hover:shadow-lg transition" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/project1/600/400" alt="Project 1" class="rounded mb-4">
+          <h4 class="text-xl font-semibold mb-2 text-blue-700">Blow Mold Nozzle Replacement</h4>
+          <p class="text-gray-600">Participated in replacing nozzles during machine conversion at a bottling company.</p>
         </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h4 class="text-xl font-semibold mb-2">Conveyor Roller Maintenance</h4>
-          <p class="text-gray-700">Helped inspect and replace rollers in palletizer systems to improve efficiency.</p>
+        <div class="bg-white p-4 rounded-2xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://picsum.photos/seed/project2/600/400" alt="Project 2" class="rounded mb-4">
+          <h4 class="text-xl font-semibold mb-2 text-blue-700">Conveyor Roller Maintenance</h4>
+          <p class="text-gray-600">Helped inspect and replace rollers in palletizer systems to improve efficiency.</p>
         </div>
-        <!-- Add more project cards as needed -->
+        <div class="bg-white p-4 rounded-2xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://picsum.photos/seed/project3/600/400" alt="Project 3" class="rounded mb-4">
+          <h4 class="text-xl font-semibold mb-2 text-blue-700">Mold Shell and Case Conversion</h4>
+          <p class="text-gray-600">Contributed to shell and case changes in the mold during production conversion tasks.</p>
+        </div>
       </div>
     </div>
-  </section>  <!-- Experience -->  <section id="experience" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-bold mb-6">Experience</h3>
-      <ul class="space-y-4">
+  </section>  <!-- Experience -->  <section id="experience" class="py-24 bg-white px-6" data-aos="fade-left">
+    <div class="container mx-auto max-w-4xl">
+      <h3 class="text-4xl font-bold mb-8 text-center text-blue-800">Experience</h3>
+      <ul class="space-y-6">
         <li>
-          <h4 class="text-xl font-semibold">Industrial Training - Seven Up Bottling Company</h4>
-          <p class="text-gray-700">Worked on machine maintenance, mold support checks, and oven lamp replacements.</p>
+          <h4 class="text-xl font-semibold text-blue-700">Industrial Training - Seven Up Bottling Company</h4>
+          <p class="text-gray-600">Worked on machine maintenance, mold support checks, and oven lamp replacements.</p>
         </li>
-        <!-- Add more experience items if needed -->
       </ul>
     </div>
-  </section>  <!-- Skills -->  <section id="skills" class="py-20 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-bold mb-6">Skills</h3>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <span class="bg-white px-4 py-2 rounded shadow">AutoCAD</span>
-        <span class="bg-white px-4 py-2 rounded shadow">SolidWorks</span>
-        <span class="bg-white px-4 py-2 rounded shadow">MATLAB</span>
-        <span class="bg-white px-4 py-2 rounded shadow">Problem Solving</span>
-        <!-- Add more skills as needed -->
+  </section>  <!-- Skills -->  <section id="skills" class="py-24 bg-gray-50 px-6">
+    <div class="container mx-auto" data-aos="zoom-in-up">
+      <h3 class="text-4xl font-bold mb-10 text-center text-blue-800">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+        <span class="bg-white px-4 py-3 rounded shadow-md">AutoCAD</span>
+        <span class="bg-white px-4 py-3 rounded shadow-md">SolidWorks</span>
+        <span class="bg-white px-4 py-3 rounded shadow-md">MATLAB</span>
+        <span class="bg-white px-4 py-3 rounded shadow-md">Problem Solving</span>
       </div>
     </div>
-  </section>  <!-- Contact -->  <section id="contact" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-bold mb-6">Contact Me</h3>
-      <form class="max-w-xl mx-auto space-y-4">
-        <input type="text" placeholder="Name" class="w-full px-4 py-2 border rounded" />
-        <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded" />
-        <textarea placeholder="Message" rows="5" class="w-full px-4 py-2 border rounded"></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send</button>
+  </section>  <!-- Contact -->  <section id="contact" class="py-24 bg-white px-6" data-aos="fade-up">
+    <div class="container mx-auto max-w-2xl">
+      <h3 class="text-4xl font-bold mb-8 text-center text-blue-800">Contact Me</h3>
+      <form class="space-y-6">
+        <input type="text" placeholder="Name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <textarea placeholder="Message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">Send</button>
       </form>
     </div>
-  </section>  <!-- Footer -->  <footer class="bg-gray-800 text-white py-6 text-center">
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </section>  <!-- Footer -->  <footer class="bg-gray-800 text-white py-6 text-center" data-aos="fade-in">
+    <p>&copy; 2025 EBUBECHUKWU DAVID. All rights reserved.</p>
     <div class="mt-2">
       <a href="#" class="mx-2 hover:text-blue-400">LinkedIn</a>
       <a href="#" class="mx-2 hover:text-blue-400">GitHub</a>
